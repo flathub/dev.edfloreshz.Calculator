@@ -16,7 +16,8 @@
     "--socket=wayland",
     "--device=dri",
     "--talk-name=com.system76.CosmicSettingsDaemon",
-    "--filesystem=xdg-config/cosmic:ro"
+    "--filesystem=xdg-config/cosmic:rw",
+    "--filesystem=/usr/bin:ro"
   ],
   "build-options": {
     "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm18/bin",
@@ -35,7 +36,7 @@
       "build-commands": [
         "cargo --offline build --release --verbose",
         "install -Dm0755 ./target/release/cosmic-ext-calculator -t /app/bin/",
-        "install -Dm644 ./res/icons/hicolor/scalable/apps/icon.svg /app/share/icons/hicolor/scalable/apps/dev.edfloreshz.Calculator.svg",
+        "install -Dm644 ./res/icons/hicolor/scalable/apps/dev.edfloreshz.Calculator.svg /app/share/icons/hicolor/scalable/apps/dev.edfloreshz.Calculator.svg",
         "install -Dm644 ./res/metainfo.xml /app/share/metainfo/dev.edfloreshz.Calculator.metainfo.xml",
         "install -Dm644 ./res/app.desktop /app/share/applications/dev.edfloreshz.Calculator.desktop"
       ],
@@ -43,9 +44,9 @@
         {
           "type": "git",
           "url": "https://github.com/cosmic-utils/calculator.git",
-          "commit": "98a37b3a2bb6549763350624057b3fd8f902c771"
+          "commit": "e49540a676bcdec11690eb0df33cc10c9816a6ec"
         },
-        "cargo-sources.json"
+        "generated-sources.json"
       ]
     }
   ]
