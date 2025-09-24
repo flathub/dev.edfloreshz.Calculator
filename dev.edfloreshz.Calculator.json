@@ -49,8 +49,7 @@
           "url": "https://github.com/Qalculate/libqalculate/releases/download/v5.7.0/libqalculate-5.7.0.tar.gz",
           "sha256": "b0aa7e7f6b729ad88f41c3562e81bdc349e072f4df0e62ce152304d979702cfe"
         }
-      ],
-      "build-dependencies": ["intltool"]
+      ]
     },
     {
       "name": "calculator",
@@ -66,7 +65,7 @@
         {
           "type": "git",
           "url": "https://github.com/cosmic-utils/calculator.git",
-          "commit": "e49540a676bcdec11690eb0df33cc10c9816a6ec"
+          "commit": "5fd5db21265e22089c4f1df209e9144213db787d"
         },
         "generated-sources.json"
       ]
