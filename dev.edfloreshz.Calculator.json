@@ -19,6 +19,15 @@
     "--talk-name=com.system76.CosmicSettingsDaemon",
     "--filesystem=xdg-config/cosmic:rw"
   ],
+  "cleanup": [
+    "/include",
+    "/lib/pkgconfig",
+    "/share/aclocal",
+    "/share/doc",
+    "/share/man",
+    "*.la",
+    "*.a"
+  ],
   "build-options": {
     "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm20/bin",
     "env": {
