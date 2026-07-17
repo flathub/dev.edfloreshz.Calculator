@@ -75,7 +75,7 @@
         {
           "type": "git",
           "url": "https://github.com/cosmic-utils/calculator.git",
-          "commit": "2438adff64d7cabba7b949e359aedecce5541e72"
+          "commit": "ecad50ef6163bcc9c87a6c0a7d25ad6c7cc0a228"
         },
         "cargo-sources.json"
       ]
